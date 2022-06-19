@@ -53,7 +53,8 @@ async function getProfile(token) {
 
 document.getElementById("login").addEventListener('click', async event => {
   const client_id = 'b63f8b2b00f3445a835b5f79a0a5ca7e'; // Client ID is not a secret
-  const redirect_uri = 'http://localhost:1234/';
+  const temp_url = new URL(window.location.href);
+  const redirect_uri = temp_url.origin + temp_url.pathname;
   const scope = 'user-follow-modify';
 
   const state = generateRandomString(16);
