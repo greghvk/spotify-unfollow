@@ -64,7 +64,7 @@ document.getElementById("login").addEventListener('click', async event => {
   let url = new URL('https://accounts.spotify.com/authorize');
   url.searchParams.append("response_type", "token");
   url.searchParams.append("client_id", encodeURIComponent(client_id));
-  url.searchParams.append("redirect_uri", redirect_uri);
+  url.searchParams.append("redirect_uri", encodeURIComponent(redirect_uri));
   url.searchParams.append("scope", encodeURIComponent(scope));
   url.searchParams.append("state", encodeURIComponent(state));
   window.location = url;
