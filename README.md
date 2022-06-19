@@ -1,4 +1,4 @@
-# Unfollow everyone on spotify
+# Unfollow everyone on Spotify
 
 Did you accidentally follow too many people on Spotify like me? Did you try to find a functionality to unfollow them all at once, and failed, like me?
 Search no more, this project will allow you to follow everyone with a single click.
