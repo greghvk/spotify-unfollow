@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Spotify unsubscriber</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <center>
+    <div id="bar">
+      <h1 id="title"> Unfollow everyone on spotify </h1>
+      <br>
+      <button id="login" class="button-5" role="button">Authenticate</button><br>
+      <br>
+
+    </div>
+
+    <div id="content">
+      <p id=""><span id="unfollow-text">Authenticate to see how many people you follow and be able to </span><button
+          id="unfollow" class="button-5" role="button" disabled>Unfollow everyone</button><br></p>
+
+    </div>
+
+    <div id="warning">
+      <p>Unfortunately, Spotify API doesn't expose data required for full functionality
+        to be implemented (list of followed users). See Spotify developers responses
+        <a href="https://github.com/spotify/web-api/issues/4">here</a>.</p>
+      <p>However, this website still allows you to unfollow artists. This will shrink list of people you follow, and
+        make it easier to unfollow everyone else.</p>
+    </div>
+  </center>
+</body>
+
+<script src="/index.js"></script>
+
+</html>
